@@ -82,9 +82,7 @@ function calculateQuadraticEquation(input) {
   const expressionValues = getExpressionValues(expression);
   const expressionNumberValues = getExpressionNumberValues(expressionValues);
   const discriminant = calculateDiscriminant(...expressionNumberValues);
-  const quadraticFormulaResults = calculateQuadraticFormula(
-    ...expressionNumberValues
-  );
+  const quadraticFormulaResults = calculateQuadraticFormula(...expressionNumberValues);
   // console.log("Expression:", expression);
   // console.log("Expression Values:", expressionValues);
   // console.log("Expression Number Values:", expressionNumberValues);
