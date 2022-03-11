@@ -101,13 +101,14 @@ function calculateQuadraticEquation(input) {
 // console.log(calculateQuadraticEquation("5x^2 + 6x + 1 = 0"));
 // console.log(calculateQuadraticEquation("5x^2 + 2x + 1 = 0")); 
 // console.log(calculateQuadraticEquation("1x^2 - 4x + 6.25 = 0")); // Does not support floating point numbers yet
-console.log(calculateQuadraticEquation("1x^2 - 2x - 7 = 0"));
+// console.log(calculateQuadraticEquation("1x^2 - 2x - 7 = 0"));
 
 // 3.8284271247461903 * -1.8284271247461903 + Math.pow(3.8284271247461903, 2) + Math.pow(-1.8284271247461903, 2) = 11 // Correct
 // x1 + x2 = -b / a;
 // x1 * x2 = c / a;
-// const result = calculateQuadraticEquation("1x^2 - 2x - 7 = 0");
-// const x1 = result.QuadraticFormulaResults[0];
-// const x2 = result.QuadraticFormulaResults[1];
+const result = calculateQuadraticEquation("1x^2 - 2x - 7 = 0");
+const [x1, x2] = result.QuadraticFormulaResults;
+console.log(x1 + x2, 2 / 1);
+console.log(x1 * x2, -7 / 1);
 
-module.exports = { calculateMedianAndModa, calculateQuadraticEquation }
+module.exports = { calculateMedianAndModa, calculateQuadraticEquation };
